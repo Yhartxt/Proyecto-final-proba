@@ -1,0 +1,17 @@
+streamlit
+
+pandas
+
+numpy
+
+scipy
+
+matplotlib
+
+seaborn
+
+plotly
+
+google-generativeai
+
+python-dotenv
