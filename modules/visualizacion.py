@@ -14,7 +14,7 @@ def mostrar_graficas(df):
         st.warning("Tu archivo no contiene columnas numéricas.")
         return
         
-    columna_seleccionada = st.selectbox("Selecciona la variable a analizar:", columnas_numericas)
+    columna_seleccionada = st.selectbox("Selecciona la variable a analizar:", columnas_numericas,key="viz_columna")
     datos = df[columna_seleccionada].dropna()
     
     #Crea dos columnas en la pantalla para poner las gráficas lado a lado
