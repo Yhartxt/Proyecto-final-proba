@@ -37,6 +37,7 @@ def obtener_datos():
             datos_aleatorios = np.random.normal(loc=media_deseada, scale=desviacion, size=n_muestras)
             
             df = pd.DataFrame({"Valor": datos_aleatorios}) 
+            st.session_state["df"] = df
             st.sidebar.success("¡Datos sintéticos generados!")
 
     return df
