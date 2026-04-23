@@ -6,8 +6,9 @@ from modules import carga_datos, visualizacion, prueba_z, asistente_ia #Aqui se 
 st.set_page_config(page_title="App de Estadística", layout="wide")
 
 load_dotenv()
-api_key = os.getenv("GEMINI_API_KEY")
+api_key = os.getenv("GROQ_API_KEY")
 st.title("Proyecto de Probabilidad y Estadística")
+
 #Carga de Datos
 df = carga_datos.obtener_datos()
 

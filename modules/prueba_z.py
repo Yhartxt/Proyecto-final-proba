@@ -52,7 +52,8 @@ def calcular(df):
         
         # Parte 5 - Grafica
         fig, ax = plt.subplots(figsize=(10, 4))
-        x = np.linspace(-4, 4, 1000)
+        limite = max(4, abs(z) + 1)
+        x = np.linspace(-limite, limite, 1000)
         y = stats.norm.pdf(x)
         ax.plot(x, y, 'b-', linewidth=2)
 
